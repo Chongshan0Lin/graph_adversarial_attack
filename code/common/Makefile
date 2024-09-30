@@ -42,8 +42,10 @@ $(obj_build_root)/%.o: src/%.cu
 	$(NVCC) $(NVCCFLAGS) $(CUDA_ARCH) -M $< -o ${@:.o=.d} -odir $(@D)
 	$(NVCC) $(NVCCFLAGS) $(CUDA_ARCH) -c $< -o $@
 
-$(mylib): src/*.c src/*.h src/*.cu
-	python build.py
+$(mylib): src/*.cpp src/*.h src/*.cu
+	# python build.py build_ext
+	python build.py build_ext --inplace --force
+
 
 clean:
 	rm -f $(obj_build_root)/*.o

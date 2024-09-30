@@ -1,4 +1,4 @@
-import cPickle as cp
+import pickle as cp
 import networkx as nx
 
 def load_pkl(fname, num_graph):

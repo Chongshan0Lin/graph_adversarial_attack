@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from tqdm import tqdm
-import cPickle as cp
+import pickle as cp
 sys.path.append('%s/../common' % os.path.dirname(os.path.realpath(__file__)))
 from cmd_args import cmd_args, save_args
 from dnn import GraphClassifier

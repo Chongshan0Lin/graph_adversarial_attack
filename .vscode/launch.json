@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/chongshan0lin/Documents/Research/Fairness_Attack_With_RL/graph_adversarial_attack/code/common/src",
+      "program": "/Users/chongshan0lin/Documents/Research/Fairness_Attack_With_RL/graph_adversarial_attack/code/common/src/build/Debug/outDebug"
+    }
+  ]
+}
